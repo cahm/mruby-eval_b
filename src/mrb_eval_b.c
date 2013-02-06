@@ -118,3 +118,8 @@ mrb_mruby_eval_b_gem_init(mrb_state* mrb)
   mrb_define_method(mrb, mrb->kernel_module, "eval_t", mrb_eval_t, ARGS_REQ(1));
 #endif
 }
+
+void
+mrb_mruby_eval_b_gem_final(mrb_state* mrb) {
+  // finalizer
+}
